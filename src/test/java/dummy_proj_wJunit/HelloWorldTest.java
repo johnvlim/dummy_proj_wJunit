@@ -4,6 +4,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class HelloWorldTest {
 	private static HelloWorld helloWorld;
@@ -22,7 +23,12 @@ public class HelloWorldTest {
 	}
 
 	@Test
-	public void testGetHelloWorldString() {
+	public void test_getHelloWorld_notNull() {
+		assertNotNull(getHelloWorld());
+	}
+
+	@Test
+	public void test_getHelloWorldString_equals_HelloWorld() {
 		String helloWorldString = helloWorld.getHelloWorldString();
 
 		assertEquals(helloWorldString, "HelloWorld");
