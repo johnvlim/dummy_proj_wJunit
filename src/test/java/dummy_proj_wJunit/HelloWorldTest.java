@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 
 public class HelloWorldTest {
 	private static HelloWorld helloWorld;
@@ -25,6 +26,11 @@ public class HelloWorldTest {
 	@Test
 	public void test_getHelloWorld_notNull() {
 		assertNotNull(getHelloWorld());
+	}
+
+	@Test
+	public void test_getHelloWorld_null() {
+		assertNull(getHelloWorld());
 	}
 
 	@Test
