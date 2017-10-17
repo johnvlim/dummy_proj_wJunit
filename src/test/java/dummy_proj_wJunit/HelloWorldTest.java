@@ -28,10 +28,16 @@ public class HelloWorldTest {
 		assertNotNull(getHelloWorld());
 	}
 
+	/*
+	 * demo (begin)
+	 * *//*
 	@Test
 	public void test_getHelloWorld_null() {
 		assertNull(getHelloWorld());
-	}
+	}*/
+	/*
+	 * demo (end)
+	 * */
 
 	@Test
 	public void test_getHelloWorldString_equals_HelloWorld() {
